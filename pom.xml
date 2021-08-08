@@ -6,11 +6,16 @@
   <name>CacheDemo</name>
   <description>sample project to cache rds data</description>
   <dependencies>
-  	<dependency>
+  	<!--<dependency>
   		<groupId>org.mariadb.jdbc</groupId>
   		<artifactId>mariadb-java-client</artifactId>
   		<version>1.1.7</version>
-  	</dependency>
+  	</dependency>-->
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.47</version>
+	</dependency>
   	<dependency>
   		<groupId>redis.clients</groupId>
   		<artifactId>jedis</artifactId>
@@ -51,7 +56,7 @@
 			<configuration>
 		 		<archive>
 					<manifest>
-						<mainClass>src/main/java/demo/CacheRowDemo</mainClass>						
+						<mainClass>src/main/java/demo/CacheObjectDemo</mainClass>						
 					</manifest> 
 				</archive>  
 				<descriptorRefs>
